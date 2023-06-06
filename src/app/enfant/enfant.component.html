@@ -1,0 +1,5 @@
+<div *ngFor="let person of list">
+    <strong>{{this.person.name}}</strong>
+    <p>is {{this.person.age}} years old, likes {{this.person.hobby}}</p>
+    <button type="button" (click)="deleteCard(this.person)">Delete card</button>
+</div>
